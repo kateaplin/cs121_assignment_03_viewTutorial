@@ -21,6 +21,7 @@
 		29AD8A5F19C13F2A00D1893D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AD8A4119C13F2A00D1893D /* UIKit.framework */; };
 		29AD8A6719C13F2A00D1893D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29AD8A6519C13F2A00D1893D /* InfoPlist.strings */; };
 		29AD8A6919C13F2A00D1893D /* viewTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AD8A6819C13F2A00D1893D /* viewTutorialTests.m */; };
+		29AD8A7419C140B200D1893D /* KAGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AD8A7319C140B200D1893D /* KAGrid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		29AD8A6419C13F2A00D1893D /* viewTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "viewTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		29AD8A6619C13F2A00D1893D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29AD8A6819C13F2A00D1893D /* viewTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewTutorialTests.m; sourceTree = "<group>"; };
+		29AD8A7219C140B200D1893D /* KAGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAGrid.h; sourceTree = "<group>"; };
+		29AD8A7319C140B200D1893D /* KAGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAGrid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				29AD8A4F19C13F2A00D1893D /* Main.storyboard */,
 				29AD8A5219C13F2A00D1893D /* KAViewController.h */,
 				29AD8A5319C13F2A00D1893D /* KAViewController.m */,
+				29AD8A7219C140B200D1893D /* KAGrid.h */,
+				29AD8A7319C140B200D1893D /* KAGrid.m */,
 				29AD8A5519C13F2A00D1893D /* Images.xcassets */,
 				29AD8A4419C13F2A00D1893D /* Supporting Files */,
 			);
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29AD8A5419C13F2A00D1893D /* KAViewController.m in Sources */,
+				29AD8A7419C140B200D1893D /* KAGrid.m in Sources */,
 				29AD8A4E19C13F2A00D1893D /* KAAppDelegate.m in Sources */,
 				29AD8A4A19C13F2A00D1893D /* main.m in Sources */,
 			);
@@ -380,7 +386,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "viewTutorial/viewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "viewTutorial/viewTutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,7 +401,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "viewTutorial/viewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "viewTutorial/viewTutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
